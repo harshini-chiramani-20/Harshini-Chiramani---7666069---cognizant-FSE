@@ -1,7 +1,15 @@
 package com.cts;
 
-public interface ExternalApi {
+public class DataService {
 
-    String getData();
+    private ExternalApi api;
+
+    public DataService(ExternalApi api) {
+        this.api = api;
+    }
+
+    public String fetchData() {
+        return api.getData();
+    }
 
 }
