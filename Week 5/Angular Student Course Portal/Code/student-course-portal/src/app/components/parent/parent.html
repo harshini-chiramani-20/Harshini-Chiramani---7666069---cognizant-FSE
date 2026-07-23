@@ -1,0 +1,5 @@
+<h2>Parent Component</h2>
+
+<app-child [studentName]="student" (notifyParent)="receiveMessage($event)"> </app-child>
+
+<p><b>Message from Child:</b> {{ message }}</p>
